@@ -20,6 +20,22 @@
         android:paddingRight="16dp"
         android:text="0" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Prices"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="0" />
+
     <Button
         android:id="@+id/order_botton_view"
         android:layout_width="wrap_content"
