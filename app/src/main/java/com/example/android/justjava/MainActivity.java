@@ -8,8 +8,6 @@
 
 package com.example.android.justjava;
 
-
-
 import android.os.Bundle;
 //import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,7 +21,7 @@ import java.text.NumberFormat;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
-
+    int numberOffCoffees = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +33,20 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int numberOffCoffees = 2;
+        //int numberOffCoffees = 2;
         display(numberOffCoffees);
         displayPrice(numberOffCoffees * 5);
+    }
+
+    public void submitIncrement(View view) {
+         numberOffCoffees++;
+         display(numberOffCoffees);
+    }
+
+    public void submitDecrement(View view) {
+        if (numberOffCoffees > 0)
+            numberOffCoffees--;
+        display(numberOffCoffees);
     }
 
     /**
